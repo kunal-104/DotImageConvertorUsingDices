@@ -55,3 +55,8 @@ npm run train
 
 # Start the web server
 npm start
+
+
+
+
+All training task is already done, so just need to run the command npm start and use the model. No need to run previous commands, as those are for training the modal.
