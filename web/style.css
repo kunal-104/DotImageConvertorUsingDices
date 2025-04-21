@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  h2, h3 {
+    color: #444;
+  }
+  
+  .upload-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+  }
+  
+  .settings {
+    margin: 20px 0;
+  }
+  
+  input[type="file"] {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  input[type="number"] {
+    padding: 5px;
+    width: 60px;
+  }
+  
+  button {
+    display: block;
+    padding: 10px 15px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background: #45a049;
+  }
+  
+  .image-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .image-container {
+    width: 48%;
+    text-align: center;
+  }
+  
+  canvas {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    background: #fff;
+  }
+  
+  .status {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  #statusMessage {
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .image-section {
+      flex-direction: column;
+    }
+    
+    .image-container {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }

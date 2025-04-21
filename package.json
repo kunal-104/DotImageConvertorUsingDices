@@ -1,0 +1,19 @@
+{
+    "name": "dice-image-generator",
+    "version": "1.0.0",
+    "description": "Convert images into dice patterns using TensorFlow.js",
+    "main": "src/dicify.js",
+    "type": "build",
+    "scripts": {
+        "generate-data": "node src/generate-data.js",
+        "train": "node src/train-model.js",
+        "start": "npx http-server web"
+    },
+    "dependencies": {
+        "@tensorflow/tfjs": "^2.8.5",
+        "@tensorflow/tfjs-node": "^2.8.5"
+    },
+    "devDependencies": {
+        "http-server": "^14.1.1"
+    }
+}

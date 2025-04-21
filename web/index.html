@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dice Image Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.16.0"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Dice Image Generator</h1>
+    
+    <div class="upload-section">
+      <h2>Upload an Image</h2>
+      <input type="file" id="imageUpload" accept="image/*">
+      <div class="settings">
+        <label for="numDice">Number of Dice (per side): </label>
+        <input type="number" id="numDice" min="4" max="64" value="16">
+      </div>
+      <button id="processBtn">Generate Dice Image</button>
+    </div>
+    
+    <div class="image-section">
+      <div class="image-container">
+        <h3>Original Image</h3>
+        <canvas id="originalCanvas"></canvas>
+      </div>
+      <div class="image-container">
+        <h3>Dice Image</h3>
+        <canvas id="diceCanvas"></canvas>
+      </div>
+    </div>
+    
+    <div class="status">
+      <p id="statusMessage">Upload an image to get started</p>
+    </div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
